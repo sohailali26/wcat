@@ -1,8 +1,8 @@
 #!usr/bin/env node
-
+const chalk = require('chalk');
 const fs=require ("fs");
 let arguents=process.argv.slice(2); //process.argv is used to get all the arguments passed.
-console.log(arguents);
+console.log(chalk.blue(arguents));
 
 let flags=[];
 let filenames=[];
@@ -62,7 +62,7 @@ for(let file of filenames){
         //copy folder 1 content to folder 2
         //search on google CAT COMMANTS IN LINUX
     }
-    console.log(filedata);        
+    console.log(chalk.redBright(filedata));        
     
     
 }
